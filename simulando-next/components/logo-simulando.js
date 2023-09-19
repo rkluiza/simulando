@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import Image from 'next/image' //na tentativa de usar o componente Image do next
 
 function LogoSimulando() {
   return (
     <>
-        <Image src="../images/logo-simulando.png" width={200} height={500} alt='Logo Simulando'/>;
+        <img src="/../images/logo-simulando.png" width={200} height={500} alt='Logo Simulando'/>
     </>
     )}
 

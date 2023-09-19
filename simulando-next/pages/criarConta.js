@@ -1,10 +1,14 @@
 import CriarcontaForm from '../components/criarconta-form.js';
 import LogoSimulando from '../components/logo-simulando.js';
-
+import OffcanvasExample from '../components/cabecalho.js';
 
 export default function criarConta() {
     return ( 
         <>
+            <div>
+            <OffcanvasExample>
+            </OffcanvasExample>
+            </div>
             <div>
                 <LogoSimulando>
                 </LogoSimulando>
@@ -16,6 +20,3 @@ export default function criarConta() {
         </>
     )
 }
-
-//essa vaca tambem n ta funcionando, pelo o que eu entendi
-// n ta reconhecendo os componentes
