@@ -1,0 +1,8 @@
+.formulario input{
+    background-color: white;
+    border: 1px solid salmon;
+    color: rgb(197, 128, 1);
+    border-radius: 15px;
+    padding: 10px;
+}
+

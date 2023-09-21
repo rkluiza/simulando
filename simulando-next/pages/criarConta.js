@@ -9,13 +9,20 @@ export default function criarConta() {
             <OffcanvasExample>
             </OffcanvasExample>
             </div>
-            <div>
-                <LogoSimulando>
-                </LogoSimulando>
-            </div>
-            <div>
-                <CriarcontaForm>
-                </CriarcontaForm>
+
+            
+            <div className='container'>
+                <div className='col-6'>
+                    <LogoSimulando>
+                    </LogoSimulando>
+                </div>
+
+                    <div className='row'>
+                        <div className='col-6'>
+                            <CriarcontaForm>
+                            </CriarcontaForm>
+                    </div>
+                </div>
             </div>
         </>
     )
