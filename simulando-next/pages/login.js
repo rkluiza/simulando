@@ -1,5 +1,4 @@
 import BasicExample from '../components/login-form'
-import LogoSimulando from '../components/logo-simulando'
 import OffcanvasExample from '../components/cabecalho'
 
 export default function Login() {
@@ -12,7 +11,7 @@ export default function Login() {
         <div className='container'>
             <div className='row'>
                 <div className='col-6'>
-                    <LogoSimulando></LogoSimulando>
+                    <Image src='/logo-simulando.png' width={280.5} height={55.5} />
                 </div>
             </div>
             <div className='row'>

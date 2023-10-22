@@ -24,7 +24,7 @@ function BasicExample() {
 
     <Link href="/">Esqueci minha senha</Link>
 
-    <p>Não tem uma conta?<Link href="/"> Cadastre-se</Link></p>
+    <p>Não tem uma conta?<Link href="/criarConta"> Cadastre-se</Link></p>
     </>
   );
 }
