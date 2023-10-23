@@ -46,8 +46,8 @@ function OffcanvasExample() {
                   <Nav.Link href="/">Home</Nav.Link>
                   <Nav.Link href="/historico">Histórico</Nav.Link>
                   <Nav.Link href="/recomendacoes">Recomendações</Nav.Link>
-                  <Nav.Link href="#action4">Quiz</Nav.Link>
-                  <Nav.Link href="#action5">Sobre Nós</Nav.Link>
+                  <Nav.Link href="/">Quiz</Nav.Link>
+                  <Nav.Link href="/">Sobre Nós</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
