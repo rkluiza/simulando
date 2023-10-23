@@ -1,0 +1,16 @@
+
+.menu{
+    background: #004AAD;
+    margin: 0;
+
+}
+.botaoMenu{
+    background-color: white;
+}
+.iconPessoa{
+    margin-left: 20px;
+}
+.iconPessoa:hover{
+    color: #97c4ff;
+    border: 4px;
+}

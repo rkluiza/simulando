@@ -2,17 +2,33 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import Image from 'next/image';
+import styles from '../styles/cabecalho.module.css';
+import { useRouter } from 'next/router';
+import { Image } from 'react-bootstrap';
+
+
+
 
 function OffcanvasExample() {
+    const router = useRouter();
+    
+    
+    const handleLoginClick = () => {
+    router.push('/login.js'); {/*deu errado aqui n entendi o pq */}
+  };
+    const handleHomeClick = () => {
+      router.push('/'); 
+    }
+
   return (
     <>
       {[false].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
-          <Container fluid>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+        <Navbar  key={expand} expand={expand} className="bg-body-tertiary mb-3">
+          <Container  className={styles.menu} fluid>
+          <Navbar.Toggle className={styles.botaoMenu} aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Brand href="#">
-                <Image src='/logo-simulando.png' width={280.5} height={55.5} />
+                <Image src='/logo-simulando.png' onClick={handleHomeClick} width={280.5} height={55.5}/> {/* nao consegui colocar o href */}
+                <Image className={styles.iconPessoa} onClick={handleLoginClick} src='/icon-pessoa.png' width={40.5} height={35.5}></Image>
             </Navbar.Brand>
             
             <Navbar.Offcanvas

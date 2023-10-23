@@ -1,0 +1,21 @@
+.subtitulo{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color:white;
+}
+.paragrafo{
+    text-align: right;
+    padding: 50px;
+}
+.botao{
+    border-radius: 20px;
+    background: #81C9FA;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+.colBotao{
+    font-family: 'Anton', sans-serif;
+    font-family: Anton;
+}
+style.linhaLogo{
+    padding: 40px;
+}
