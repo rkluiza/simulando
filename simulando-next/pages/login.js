@@ -12,11 +12,7 @@ export default function Login() {
         </div>
 
         <Container>
-            <Row>
-                <Col className='col-6'>
-                    <Image src='/logo-simulando.png' width={480.5} height={85.5}/>
-                </Col>
-            </Row>
+
             <Row>
                 <Col className='col-6'>
                     <BasicExample></BasicExample>

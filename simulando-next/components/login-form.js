@@ -3,12 +3,18 @@ import Form from 'react-bootstrap/Form'
 import Link from 'next/link'
 import style from '../styles/Inicio.module.css'
 import { Container, Row, Col } from 'react-bootstrap';
+import PasswordRecovery from './Esqueci-senha';
+import Image from 'next/image';
 
 function BasicExample() {
   return (
     <>
     <Container>
-
+    <Row>
+                <Col className='col-6'>
+                    <Image src='/logo-simulando.png' width={480.5} height={85.5}/>
+                </Col>
+            </Row>
         <Col></Col>
         <Col>
     <Form>
@@ -30,8 +36,7 @@ function BasicExample() {
     <Col></Col>
 
 
-    <Link href="/">Esqueci minha senha</Link>
-
+    <PasswordRecovery></PasswordRecovery>
     <p>Não tem uma conta?<Link href="/criarConta"> Cadastre-se</Link></p>
     </Container>
     </>

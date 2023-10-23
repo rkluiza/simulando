@@ -20,19 +20,38 @@ function PasswordRecovery() {
 
   const handleNext = () => {
     if (step === 1) {
-      // Validar o email, se necessário
-      setStep(2);
-    } else {
-      // Validar o código de recuperação, se necessário
-      // Você pode adicionar a lógica de validação aqui
-      // Se o código estiver correto, você pode prosseguir com a recuperação da senha
-      handleClose();
+        if (validateEmail(email)) {
+            setStep(2);
+          } else {
+            alert("Email inválido. Por favor, insira um email válido.");
+          }}
+    else {
+        if (validateRecoveryCode(code)) {
+            // Código de recuperação válido, você pode prosseguir com a recuperação da senha
+            // Aqui você pode adicionar a lógica para enviar o código para o servidor e processar a recuperação da senha
+            alert("Código de recuperação válido. Processando a recuperação da senha...");
+            handleClose();
+          } else {
+            alert("Código de recuperação inválido. Por favor, insira um código válido.");
+            }
     }
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+    return emailRegex.test(email);
+  };
+
+  const validateRecoveryCode = (code) => {
+    // Implemente sua lógica de validação do código de recuperação aqui
+    // Por exemplo, verificar se o código tem o formato esperado ou corresponde a um código gerado previamente
+    // Esta função deve retornar true se o código for válido e false caso contrário
+    return code === "codigo_valido"; // Exemplo de validação simples
   };
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="Link" onClick={handleShow}>
         Esqueci minha senha
       </Button>
 
@@ -81,4 +100,3 @@ function PasswordRecovery() {
 }
 
 export default PasswordRecovery;
-
