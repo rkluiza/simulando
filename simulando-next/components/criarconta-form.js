@@ -28,7 +28,7 @@ export default function CriarcontaForm() {
       </Button>
     </Form>
 
-    <p>Já tem uma conta? <Link href="/">Entrar</Link></p>
+    <p>Já tem uma conta? <Link href="/login">Entrar</Link></p>
     </>
   );
 }
