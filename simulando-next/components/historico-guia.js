@@ -5,22 +5,23 @@ import { Nav } from 'react-bootstrap';
 
 function GuiaHistorico() {
   return (
-
-    <Nav className={`${style.navlink} mb-3`} variant="tabs" defaultActiveKey="/home" id="justify-tab-example"
-    justify >
+    <>
       
-      <Nav.Item>
-        <Nav.Link eventKey="graficos">Gráficos</Nav.Link>
-      </Nav.Item>
+      <Nav className={`${style.navlink} mb-3`} variant="tabs" defaultActiveKey="/home" id="justify-tab-example"
+      justify >
+        
+        <Nav.Item>
+          <Nav.Link eventKey="graficos">Gráficos</Nav.Link>
+        </Nav.Item>
 
 
 
-      
-      <Nav.Item>
-        <Nav.Link eventKey="detalhes">Detalhes</Nav.Link>
-      </Nav.Item>
-    </Nav>
-
+        
+        <Nav.Item>
+          <Nav.Link eventKey="detalhes">Detalhes</Nav.Link>
+        </Nav.Item>
+      </Nav>
+    </>
   );
 }
 
