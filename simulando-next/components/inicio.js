@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Button from 'react-bootstrap/Button'
-import style from '../styles/inicio.module.css'
+import style from '../styles/Inicio.module.css'
 import { Col } from 'react-bootstrap'
 import { Row } from 'react-bootstrap'
 
