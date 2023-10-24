@@ -5,9 +5,9 @@ body {
   background: linear-gradient(to right, #75a4f7, #013C8B);
   font-family: 'Anton', sans-serif;
   font-family: Anton;
-  font-size: 30px;
+  /* font-size: 30px; */
   font-style: normal;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: normal;
   color: white;
 }
@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 
 }
-p, h1, h2{
+p, h1, h2, h3{
   color: white;
   font-family: 'Anton', sans-serif;
   font-family: Anton;

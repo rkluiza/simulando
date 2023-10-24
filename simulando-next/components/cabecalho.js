@@ -14,7 +14,7 @@ function OffcanvasExample() {
     
     
     const handleLoginClick = () => {
-    router.push('/login.js'); {/*deu errado aqui n entendi o pq */}
+    router.push('/login');
   };
     const handleHomeClick = () => {
       router.push('/'); 
@@ -27,7 +27,7 @@ function OffcanvasExample() {
           <Container  className={styles.menu} fluid>
           <Navbar.Toggle className={styles.botaoMenu} aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Brand href="#">
-                <Image src='/logo-simulando.png' onClick={handleHomeClick} width={280.5} height={55.5}/> {/* nao consegui colocar o href */}
+                <Image src='/logo-simulando.png' href="/index" onClick={handleHomeClick} width={224.4} height={44.4}/>
                 <Image className={styles.iconPessoa} onClick={handleLoginClick} src='/icon-pessoa.png' width={40.5} height={35.5}></Image>
             </Navbar.Brand>
             
@@ -38,7 +38,7 @@ function OffcanvasExample() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  <Image src='/logo-simulando.png' width={280.5} height={55.5} />
+                  <Image src='/logo-simulando.png' width={224.4} height={44.4} />
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -47,7 +47,7 @@ function OffcanvasExample() {
                   <Nav.Link href="/historico">Histórico</Nav.Link>
                   <Nav.Link href="/recomendacoes">Recomendações</Nav.Link>
                   <Nav.Link href="/">Quiz</Nav.Link>
-                  <Nav.Link href="/">Sobre Nós</Nav.Link>
+                  <Nav.Link href="/sobreNos">Sobre Nós</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
