@@ -13,8 +13,7 @@ export default function criarConta() {
             
             <div className='container'>
                 <div className='col-6'>
-                    <LogoSimulando>
-                    </LogoSimulando>
+                    
                 </div>
 
                     <div className='row'>
@@ -26,4 +25,4 @@ export default function criarConta() {
             </div>
         </>
     )
-}
+};
