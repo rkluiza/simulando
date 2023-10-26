@@ -17,18 +17,18 @@ function BasicExample() {
             </Row>
         <Col></Col>
         <Col>
-    <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control type="email" placeholder="Email" />
+    <Form method="POST" action={url_for('login')}>
+      <Form.Group className="mb-3" controlId="formBasicEmail" >
+        <Form.Control type="email" placeholder="Email" required />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Control type="password" placeholder="Senha" />
+        <Form.Control type="password" placeholder="Senha" required/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Me mantenha conectado" />
       </Form.Group>
-      <Button className={`${style.botao} float-right`} variant="primary" type="submit">
+      <Button className={`${style.botao} float-right`} variant="primary" type="submit" value={login}>
         Entrar
       </Button>
     </Form>
