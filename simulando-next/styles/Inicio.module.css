@@ -1,11 +1,19 @@
+.container{
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
 .subtitulo{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color:white;
+    margin-left: 78px;
 }
 .paragrafo{
     text-align: right;
     padding: 50px;
     color: white;
+    margin-left: 400px;
 }
 .botao{
     border-radius: 20px;
@@ -17,7 +25,4 @@
 .colBotao{
     font-family: 'Anton', sans-serif;
     font-family: Anton;
-}
-style.linhaLogo{
-    padding: 40px;
 }
