@@ -23,7 +23,7 @@ function BasicExample() {
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Control type="password" placeholder="Senha" required/>
+        <Form.Control type="password" minlength="8" placeholder="Senha" required/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Me mantenha conectado" />
