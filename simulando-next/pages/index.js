@@ -9,7 +9,7 @@ export default function Home() {
     <Head>
         <title>Simulando!</title>
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"/>
-      </Head>
+    </Head>
     <Cabecalho/>
     <Inicio/>
     </>
