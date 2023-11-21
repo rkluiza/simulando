@@ -27,6 +27,9 @@ export default function SobreNositens() {
                         <h2 className={style.tituloclaro}>IFSul</h2>
                         <p><Link className={style.link} href='http://www.sapiranga.ifsul.edu.br/'>Site do Campus Sapiranga</Link></p>
                         <p><Link className={style.link} href='https://www.linkedin.com/company/ifsul---campus-sapiranga'>Linkedin Campus Sapiranga</Link></p>
+
+                        <h2 className={style.tituloclaro}>Nos avalie!</h2>
+                        <p><Link className={style.link} href='https://forms.gle/P3tm2LA4se2EUuGq9'>Formulário de Avaliação do site</Link></p>
                     </div>
                 </Row>
             </div>
