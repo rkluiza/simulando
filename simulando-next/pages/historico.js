@@ -6,10 +6,12 @@ import style from '../styles/historico.module.css';
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import  Head  from "next/head";
+import Login from "../components/login.js";
 
 export default function Historico(){
     return(
-    <>
+        <>
+        <Login></Login>
     <Head>
         <title>Simulando!</title>
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"/>

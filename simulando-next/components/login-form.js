@@ -17,8 +17,7 @@ function BasicExample() {
             </Row>
         <Col></Col>
         <Col>
-    <Form method="POST" action={url_for('login')}>
-      <Form.Group className="mb-3" controlId="formBasicEmail" >
+    <Form method="POST" action={url_for('login')}>     <Form.Group className="mb-3" controlId="formBasicEmail" >
         <Form.Control type="email" placeholder="Email" required />
       </Form.Group>
 
