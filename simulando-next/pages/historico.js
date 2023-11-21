@@ -7,8 +7,20 @@ import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import  Head  from "next/head";
 import Login from "../components/login.js";
+import { useSession, getSession } from "next-auth/react"
+import AcessoNegado from "../components/Acesso-negado.js";
+
 
 export default function Historico(){
+
+    const { data: session, status } = useSession()
+
+    if (status === "unauthenticated") {
+      return (
+        <AcessoNegado></AcessoNegado>
+      )
+    }
+
     return(
         <>
         <Login></Login>

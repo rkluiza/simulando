@@ -5,10 +5,24 @@ import style from '../styles/Inicio.module.css'
 import { Container, Row, Col } from 'react-bootstrap';
 import PasswordRecovery from './Esqueci-senha';
 import Image from 'next/image';
+import { useSession, signIn, signOut } from "next-auth/react"
+import OffcanvasExample from './cabecalho';
 
-function BasicExample() {
+
+
+export default function Login() {
+  const { data: session } = useSession()
+  if (session) {
+    return (
+      <>
+        <OffcanvasExample></OffcanvasExample>
+        Logado como {session.user.name} <br />
+        <button onClick={() => signOut()}>Deslogar</button>
+      </>
+    )
+  }
   return (
-    <>
+      <>
     <Container>
     <Row>
                 <Col className='col-6'>
@@ -17,7 +31,7 @@ function BasicExample() {
             </Row>
         <Col></Col>
         <Col>
-    <Form method="POST" action={url_for('login')}>     <Form.Group className="mb-3" controlId="formBasicEmail" >
+    <Form method="POST">     <Form.Group className="mb-3" controlId="formBasicEmail" >
         <Form.Control type="email" placeholder="Email" required />
       </Form.Group>
 
@@ -27,19 +41,35 @@ function BasicExample() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Me mantenha conectado" />
       </Form.Group>
-      <Button className={`${style.botao} float-right`} variant="primary" type="submit" value={login}>
+      <Button className={`${style.botao} float-right`} variant="primary" type="submit">
         Entrar
       </Button>
+
+      <br></br>
+      <Row>
+        <Col>
+          <PasswordRecovery></PasswordRecovery>
+        </Col>
+      </Row>
+
+      <Row>
+      <Col>
+      <Link href=''>
+      <p onClick={() => signIn()}>
+        Entrar com Google
+     
+      </p>
+      </Link>
+      </Col>
+      </Row>
+   
     </Form>
     </Col>
     <Col></Col>
 
-
-    <PasswordRecovery></PasswordRecovery>
-    <p>Não tem uma conta?<Link href="/criarConta"> Cadastre-se</Link></p>
     </Container>
     </>
-  );
+  )
 }
 
-export default BasicExample;
+

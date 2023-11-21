@@ -4,7 +4,7 @@ export default function Login() {
   if (session) {
     return (
       <>
-        Logado como {session.user.email} <br />
+        Logado como {session.user.name} <br />
         <button onClick={() => signOut()}>Deslogar</button>
       </>
     )
