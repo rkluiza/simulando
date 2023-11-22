@@ -6,7 +6,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PasswordRecovery from './Esqueci-senha';
 import Image from 'next/image';
 import { useSession, signIn, signOut } from "next-auth/react"
-import OffcanvasExample from './cabecalho';
 
 
 
@@ -15,7 +14,6 @@ export default function Login() {
   if (session) {
     return (
       <>
-        <OffcanvasExample></OffcanvasExample>
         Logado como {session.user.name} <br />
         <button onClick={() => signOut()}>Deslogar</button>
       </>
