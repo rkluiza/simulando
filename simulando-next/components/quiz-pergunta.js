@@ -5,28 +5,12 @@ import style from '../styles/quiz.module.css';
 export default function Pergunta_quiz(){
     return(
         <>
-        {/* <Container className="container">
-            <Row className="row">
-                <Col>
-                    <div className="a">
-                    <Nav className={`${style.navlink} mb-3`} variant="tabs" defaultActiveKey="/home" id="justify-tab-example"
-                        justify >
-                            <Nav.Item>
-                                <Nav.Link eventKey="enunciado">Gráficos</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="alternativas">Tabelas</Nav.Link>    
-                            </Nav.Item>
-                    </Nav>
-                    </div>
-                </Col>
-            </Row>
-        </Container> */}
+
         <Container className={`${style.container}`}>
             <Row className={style.row}>
                 <Col>
-           <h3 className={style.pergunta}>Questão:</h3>
-                <p className={style.p}>Qual é a capital do Brasil?</p>
+                    <h3 className={style.pergunta}>Questão X/40</h3>
+                        <p className={style.p}>Qual é a capital do Brasil?</p>
                 </Col>
             </Row>
             <Row className={style.row}>
@@ -49,7 +33,11 @@ export default function Pergunta_quiz(){
                 <label className="form-check-label" htmlFor="alternativaD">D) Belo Horizonte</label>
                 </div>
 
-                <button type="submit" className="btn btn-primary">Enviar Resposta</button>
+                <Col className="mb-3"></Col>
+                <Col className="mb-6">
+                <button type="submit" className={style.botao}>Enviar Resposta</button>
+                </Col>
+                <Col className="mb-3"></Col>
             </form>
             </Col>
             </Row>

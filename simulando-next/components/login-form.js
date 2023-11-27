@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import Link from 'next/link'
 import style from '../styles/Inicio.module.css'
+import styles from '../styles/login.module.css'
 import { Container, Row, Col } from 'react-bootstrap';
 import PasswordRecovery from './Esqueci-senha';
 import Image from 'next/image';
@@ -21,13 +22,15 @@ export default function Login() {
   }
   return (
       <>
-    <Container>
+    <Container className={styles.tudo}>
     <Row>
                 <Col className='col-6'>
                     <Image src='/logo-simulando.png' width={480.5} height={85.5}/>
                 </Col>
             </Row>
-        <Col></Col>
+        <Row>
+          <br></br>
+        </Row>
         <Col>
     <Form method="POST">     <Form.Group className="mb-3" controlId="formBasicEmail" >
         <Form.Control type="email" placeholder="Email" required />
@@ -36,23 +39,26 @@ export default function Login() {
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Control type="password" minlength="8" placeholder="Senha" required/>
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group className=" mb-3"controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Me mantenha conectado" />
       </Form.Group>
-      <Button className={`${style.botao} float-right`} variant="primary" type="submit">
+      <Row>
+      <Button className={`${styles.botao} float-none`} variant="primary" type="submit">
         Entrar
       </Button>
-
+      </Row>
       <br></br>
       <Row>
-        <Col>
+        <Col className='mb-1'></Col>
+        <Col className='mb-10'>
           <PasswordRecovery></PasswordRecovery>
         </Col>
+        <Col className='mb-1'></Col>
       </Row>
 
       <Row>
       <Col>
-      <Link href=''>
+      <Link className ={style.paragrafo} href=''>
       <p onClick={() => signIn()}>
         Entrar com Google
      

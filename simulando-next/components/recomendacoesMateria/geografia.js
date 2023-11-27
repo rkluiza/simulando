@@ -122,7 +122,7 @@ export default function Geografia() {
             <li class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
                     <div class="fw-bold">Globalização e a nova ordem mundial</div>
-                    <Link className={styles.link} className={styles.link} target='_blank' href="https://www.preparaenem.com/geografia/clima.htm">
+                    <Link className={styles.link} target='_blank' href="https://www.preparaenem.com/geografia/clima.htm">
                     Clima: o que é, tipos, elementos, fatores - PrePara Enem</Link>
                 </div>
             </li>
