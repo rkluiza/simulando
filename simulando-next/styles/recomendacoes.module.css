@@ -7,3 +7,7 @@
     line-height: normal;
     text-align: center;
 }
+
+.link:visited{
+    color: black;
+}

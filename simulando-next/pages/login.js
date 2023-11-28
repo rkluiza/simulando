@@ -1,8 +1,8 @@
 import BasicExample from '../components/login-form'
 import OffcanvasExample from '../components/cabecalho'
-import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap'
 import Head from 'next/head'
+import style from '../styles/login.module.css'
 
 export default function Login() {
     return ( 
@@ -15,12 +15,14 @@ export default function Login() {
         <OffcanvasExample></OffcanvasExample>
         </div>
 
-        <Container>
-
-            <Row>
-                <Col className='col-6'>
+        <Container >
+            <Row className={style.linha}></Row>
+            <Row >
+                <Col className='col-3'></Col>
+                <Col className='col-6'>                    
                     <BasicExample></BasicExample>
                 </Col>
+                <Col className='col-3'></Col>
             </Row>
         </Container>
         </>

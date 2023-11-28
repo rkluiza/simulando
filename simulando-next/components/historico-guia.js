@@ -3,7 +3,9 @@ import Tabs from 'react-bootstrap/Tabs';
 import style from '../styles/historico.module.css';
 import { Nav } from 'react-bootstrap';
 
+
 function GuiaHistorico() {
+  
   return (
     <>
       
